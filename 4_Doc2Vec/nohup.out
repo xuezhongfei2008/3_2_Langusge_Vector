@@ -1,0 +1,56 @@
+Building prefix dict from the default dictionary ...
+Loading model from cache /tmp/jieba.cache
+Loading model cost 1.529 seconds.
+Prefix dict has been built succesfully.
+/opt/gongxf/anaconda3/lib/python3.6/site-packages/gensim/models/doc2vec.py:366: UserWarning: The parameter `size` is deprecated, will be removed in 4.0.0, use `vector_size` instead.
+  warnings.warn("The parameter `size` is deprecated, will be removed in 4.0.0, use `vector_size` instead.")
+Building prefix dict from the default dictionary ...
+Loading model from cache /tmp/jieba.cache
+Dumping model to file cache /tmp/jieba.cache
+Loading model cost 2.009 seconds.
+Prefix dict has been built succesfully.
+start.sh: line 1:  5406 Killed                  /opt/gongxf/anaconda3/bin/python doc2vec_gensim.py >> aa.txt
+Building prefix dict from the default dictionary ...
+Loading model from cache /tmp/jieba.cache
+Loading model cost 1.011 seconds.
+Prefix dict has been built succesfully.
+/opt/gongxf/anaconda3/lib/python3.6/site-packages/gensim/models/doc2vec.py:366: UserWarning: The parameter `size` is deprecated, will be removed in 4.0.0, use `vector_size` instead.
+  warnings.warn("The parameter `size` is deprecated, will be removed in 4.0.0, use `vector_size` instead.")
+Traceback (most recent call last):
+  File "doc2vec_gensim.py", line 119, in <module>
+    model_dm = train(x_train)
+  File "doc2vec_gensim.py", line 74, in train
+    model_dm = Doc2Vec(x_train, min_count=1, window=10, size=size, sample=1e-6, negative=5, dm=0,workers=16)
+  File "/opt/gongxf/anaconda3/lib/python3.6/site-packages/gensim/models/doc2vec.py", line 403, in __init__
+    self.build_vocab(documents, trim_rule=trim_rule)
+  File "/opt/gongxf/anaconda3/lib/python3.6/site-packages/gensim/models/doc2vec.py", line 737, in build_vocab
+    self.hs, self.negative, self.wv, self.docvecs, update=update)
+  File "/opt/gongxf/anaconda3/lib/python3.6/site-packages/gensim/models/doc2vec.py", line 882, in prepare_weights
+    self.reset_weights(hs, negative, wv, docvecs)
+  File "/opt/gongxf/anaconda3/lib/python3.6/site-packages/gensim/models/doc2vec.py", line 888, in reset_weights
+    self.reset_doc_weights(docvecs)
+  File "/opt/gongxf/anaconda3/lib/python3.6/site-packages/gensim/models/doc2vec.py", line 901, in reset_doc_weights
+    docvecs.vectors_docs = empty((length, docvecs.vector_size), dtype=REAL)
+MemoryError
+Building prefix dict from the default dictionary ...
+Loading model from cache /tmp/jieba.cache
+Loading model cost 1.895 seconds.
+Prefix dict has been built succesfully.
+/opt/gongxf/anaconda3/lib/python3.6/site-packages/gensim/models/doc2vec.py:366: UserWarning: The parameter `size` is deprecated, will be removed in 4.0.0, use `vector_size` instead.
+  warnings.warn("The parameter `size` is deprecated, will be removed in 4.0.0, use `vector_size` instead.")
+Traceback (most recent call last):
+  File "doc2vec_gensim.py", line 114, in <module>
+    model_dm = train(x_train)
+  File "doc2vec_gensim.py", line 69, in train
+    model_dm = Doc2Vec(x_train, min_count=50, window=5, size=size, sample=1e-6, negative=5, dm=0,workers=16)
+  File "/opt/gongxf/anaconda3/lib/python3.6/site-packages/gensim/models/doc2vec.py", line 403, in __init__
+    self.build_vocab(documents, trim_rule=trim_rule)
+  File "/opt/gongxf/anaconda3/lib/python3.6/site-packages/gensim/models/doc2vec.py", line 737, in build_vocab
+    self.hs, self.negative, self.wv, self.docvecs, update=update)
+  File "/opt/gongxf/anaconda3/lib/python3.6/site-packages/gensim/models/doc2vec.py", line 882, in prepare_weights
+    self.reset_weights(hs, negative, wv, docvecs)
+  File "/opt/gongxf/anaconda3/lib/python3.6/site-packages/gensim/models/doc2vec.py", line 888, in reset_weights
+    self.reset_doc_weights(docvecs)
+  File "/opt/gongxf/anaconda3/lib/python3.6/site-packages/gensim/models/doc2vec.py", line 901, in reset_doc_weights
+    docvecs.vectors_docs = empty((length, docvecs.vector_size), dtype=REAL)
+MemoryError
